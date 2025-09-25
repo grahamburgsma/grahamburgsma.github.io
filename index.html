@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet" />
+
+    <script>
+      function yearsSince(year) {
+        const currentYear = new Date().getFullYear();
+        return Math.ceil(currentYear - year) + " years";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="name">Graham Burgsma</div>
+      <hr>
+      <table class="skills-table">
+          <tr>
+            <td class="skill-category"><span class="skill-years" id="ios-years"></span>iOS</td>
+            <td class="skill-details">UIKit, SwiftUI</td>
+          </tr>
+        <tr>
+          <td class="skill-category"><span class="skill-years" id="server-years"></span>Server</td>
+          <td class="skill-details">Vapor, PostgreSQL, AWS</td>
+        </tr>
+        <tr>
+          <td class="skill-category"><span class="skill-years" id="cto-years"></span>CTO</td>
+          <td class="skill-details">SOC2, SR&ED, DevOps</td>
+        </tr>
+        <tr>
+          <td class="skill-category"><span class="skill-years" id="ai-years"></span>AI</td>
+          <td class="skill-details">Bedrock, Agents, RAG, Evals</td>
+        </tr>
+      </table>
+      <hr>
+      <div class="socials">
+        <a href="https://github.com/grahamburgsma" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/grahamburgsma/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('ios-years').textContent = yearsSince(2015);
+      document.getElementById('server-years').textContent = yearsSince(2019);
+      document.getElementById('ai-years').textContent = yearsSince(2023);
+      document.getElementById('cto-years').textContent = yearsSince(2022);
+    </script>
+  </body>
+</html>
+
+<!-- https://www.jonasbrinkhoff.com -->
+<!-- https://www.kristsdarzins.design -->

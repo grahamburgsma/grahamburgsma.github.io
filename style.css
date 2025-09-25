@@ -1,0 +1,90 @@
+:root {
+    --text-dark: rgb(32, 32, 32);
+    --text-light: rgba(32, 32, 32, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    overflow: hidden;
+    background: rgba(32, 32, 32, 0.02);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+
+    margin: 2rem;
+
+    font-size: 22px;
+
+    color: var(--text-light);
+    cursor: default;
+}
+
+.name {
+    color: var(--text-dark);
+    font-weight: 500;
+    cursor: text;
+}
+
+.skills-table {
+    text-align: center;
+    border-collapse: collapse;
+    cursor: default;
+}
+
+.skills-table, td {
+    padding: 0.5rem 1rem;
+}
+
+.skill-years {
+    font-weight: 200;
+    font-size: 14px;
+    vertical-align: middle;
+    padding-right: 10px;
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+.skill-category {
+    text-align: right;
+    border-right: 1px solid rgba(32, 32, 32, 0.1);
+
+    color: var(--text-dark);
+}
+
+.skill-details {
+    text-align: left;
+
+    font-size: 20px;
+    font-weight: 300;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgba(32, 32, 32, 0.05);
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-light);
+    text-decoration: none;
+}
