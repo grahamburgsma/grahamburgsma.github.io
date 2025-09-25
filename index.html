@@ -3,19 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Graham Burgsma</title>
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet" />
-
-    <script>
-      function yearsSince(year) {
-        const currentYear = new Date().getFullYear();
-        return Math.ceil(currentYear - year) + " years";
-      }
-    </script>
   </head>
 
   <body>
@@ -48,6 +41,11 @@
     </div>
 
     <script>
+      function yearsSince(year) {
+        const currentYear = new Date().getFullYear();
+        return Math.ceil(currentYear - year) + " years";
+      }
+
       document.getElementById('ios-years').textContent = yearsSince(2015);
       document.getElementById('server-years').textContent = yearsSince(2019);
       document.getElementById('ai-years').textContent = yearsSince(2023);
