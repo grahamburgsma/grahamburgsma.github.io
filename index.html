@@ -13,27 +13,28 @@
 
   <body>
     <div class="main">
-      <div class="name">Graham Burgsma</div>
-      <hr>
+      <h1 class="name">Graham Burgsma</h1>
+      <p class="aboutme">A Swift developer and technical leader with expertise in iOS and server-side development. Currently serving as CTO at Constant Health, leading the creation of a secure, SOC 2 compliant health platform from iOS app to Vapor backend on AWS. Recent work includes designing AI-driven features that improve clinical efficiency and outcomes, while shaping product strategy and guiding a small development team.</p>
+      <hr />
       <table class="skills-table">
-          <tr>
-            <td class="skill-category"><span class="skill-years" id="ios-years"></span>iOS</td>
-            <td class="skill-details">UIKit, SwiftUI</td>
-          </tr>
+        <tr>
+          <td class="skill-category"><span class="skill-years" id="ios-years"></span>iOS</td>
+          <td class="skill-details">UIKit, SwiftUI</td>
+        </tr>
         <tr>
           <td class="skill-category"><span class="skill-years" id="server-years"></span>Server</td>
           <td class="skill-details">Vapor, PostgreSQL, AWS</td>
         </tr>
         <tr>
           <td class="skill-category"><span class="skill-years" id="cto-years"></span>CTO</td>
-          <td class="skill-details">SOC2, SR&ED, DevOps</td>
+          <td class="skill-details">SOC2, SR&ED, Management</td>
         </tr>
         <tr>
           <td class="skill-category"><span class="skill-years" id="ai-years"></span>AI</td>
           <td class="skill-details">Bedrock, Agents, RAG, Evals</td>
         </tr>
       </table>
-      <hr>
+      <hr />
       <div class="socials">
         <a href="https://github.com/grahamburgsma" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/grahamburgsma/" target="_blank">LinkedIn</a>
@@ -46,10 +47,10 @@
         return Math.ceil(currentYear - year) + " years";
       }
 
-      document.getElementById('ios-years').textContent = yearsSince(2015);
-      document.getElementById('server-years').textContent = yearsSince(2019);
-      document.getElementById('ai-years').textContent = yearsSince(2023);
-      document.getElementById('cto-years').textContent = yearsSince(2022);
+      document.getElementById("ios-years").textContent = yearsSince(2014);
+      document.getElementById("server-years").textContent = yearsSince(2019);
+      document.getElementById("ai-years").textContent = yearsSince(2023);
+      document.getElementById("cto-years").textContent = yearsSince(2021);
     </script>
   </body>
 </html>

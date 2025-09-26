@@ -13,6 +13,11 @@ body {
     font-family: 'Karla', sans-serif;
     overflow: hidden;
     background: rgba(32, 32, 32, 0.02);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main {
@@ -20,8 +25,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     gap: 2rem;
+    max-width: 700px;
 
     margin: 2rem;
 
@@ -35,6 +40,13 @@ body {
     color: var(--text-dark);
     font-weight: 500;
     cursor: text;
+    font-size: 24px;
+}
+
+.aboutme {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .skills-table {
